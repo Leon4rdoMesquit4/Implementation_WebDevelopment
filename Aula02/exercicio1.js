@@ -48,8 +48,5 @@ function transformarEmTransposta(matrizInicial) {
 
 let matrizTransposta = transformarEmTransposta(matriz);
 
-let teste = Array.from({length: 4})
-
-console.table(teste)
-// console.table(matrizTransposta);
-// console.table(matriz);
+console.table(matrizTransposta);
+console.table(matriz);
