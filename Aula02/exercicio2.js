@@ -17,7 +17,7 @@ function multiplicarMatrizes(matriz1, matriz2){
     for(let i = 0; i < matriz1.length; i++){
         let linha = [];
         for(let j = 0; j < matriz1[i].length; j++){
-            if(matriz1[i].length == matriz2[j].length){
+            if(matriz1[i].length != matriz2[j].length){
                 console.log("Não é possível calcular")
                 return "ERRO";
             } else{
