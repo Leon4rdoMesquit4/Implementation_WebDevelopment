@@ -6,10 +6,12 @@ de linhas da segunda matriz. Se for diferente, o algoritmo deve informar “Não
 possível calcular”;
 */
 
-let matriz1 = [[1, 3],
-               [2, 5]];
+let matriz1 = [[1, 3, 3],
+               [2, 5, 4]];
 let matriz2 = [[2, 2],
-               [0, 1]];
+               [2, 2],
+               [0, 1]
+            ];
 
 function multiplicarMatrizes(matriz1, matriz2){
     const linhas1 = matriz1.length;
