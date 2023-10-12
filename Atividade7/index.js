@@ -27,7 +27,7 @@ app.post('/dados', (req, res) => {
     const consulta = {
         doctor: req.body.doctor,
         dateTime: req.body.dateTime,
-        drug: req.body.drug,
+        medicine: req.body.medicine,
         textInfo: req.body.textInfo,
     };
 
