@@ -1,10 +1,10 @@
 const express = require('express');
-const mustacheExpress = require('mustache-express'); // framework para renderizacao de pagina html
+const mustacheExpress = require('mustache-express'); 
 const app = express();
 
-app.engine('html', mustacheExpress()); // criando a engine para renderizacao
-app.set('view engine', 'html'); // setando a engine 'html' para ser usada
-app.set('views', __dirname + '/views'); // especificando o caminho das views
+app.engine('html', mustacheExpress()); 
+app.set('view engine', 'html'); 
+app.set('views', __dirname + '/views'); 
 
 const PORT = 8080;
 
