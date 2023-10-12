@@ -10,19 +10,19 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
-<body class="bg-secondary">
+<body class="bg-primary">
 
     <form action="/dados" method="post" class="container-md mt-5">
         <h1 class="h1">Personal data</h1>
         <section>
             <div class="mb-3">
                 <label for="name" class="form-label">Full name</label>
-                <input name="name" type="text" class="form-control" id="name" maxlength="50">
+                <input name="name" type="text" class="form-control" id="name" maxlength="60">
             </div>
             <div class="mb-3">
                 <label for="cpf" class="form-label">CPF</label>
-                <input name="cpf" type="text" class="form-control" id="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
-                    maxlength="14">
+                <input name="cpf" type="text" class="form-control" id="cpf" pattern="\d{11}"
+                    maxlength="11">
             </div>
             <div class="mb-3">
                 <label class="form-label" for="birthDate">Bith date</label>
@@ -76,7 +76,7 @@
             <div class="mb-3">
                 <label for="telefone" class="form-label">Phone</label>
                 <input name="telefone" type="tel" class="form-control" id="telefone"
-                    pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" maxlength="15" required>
+                    pattern="[0-9]{11}" maxlength="11" required>
             </div>
 
         </section>

@@ -48,7 +48,7 @@ app.post('/dados', (req, res) => {
 
     let erro_form = [];
 
-    Object.entries(dadosPaciente).forEach(info => {
+    Object.entries(paciente).forEach(info => {
         if(info[1] == "") {
             const fieldWithError = fieldsName[info[0]]
             console.log('dados do paciente', fieldWithError)
@@ -56,7 +56,7 @@ app.post('/dados', (req, res) => {
         }
     });
 
-    Object.entries(dadosConsulta).forEach(info => {
+    Object.entries(consulta).forEach(info => {
         if(info[1] == "") {
             const fieldWithError = fieldsName[info[0]]
             console.log('dados da consulta', fieldWithError)
@@ -64,9 +64,7 @@ app.post('/dados', (req, res) => {
         }
     });
 
-    console.log(erro_form);
-
-    res.render("dados.html", {dadosPaciente, dadosConsulta, erro_form});
+    res.render("dados.html", {paciente, consulta, erro_form});
 
 });
 
