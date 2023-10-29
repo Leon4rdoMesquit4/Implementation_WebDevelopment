@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    
+    <h1>Calculadora</h1>
+    <form action="/calcular" method="post">
+
+        <label for="n1">Número 1</label>
+        <input type="text", name="n1", id="n1">
+
+        <select name="operador" id="operador">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+
+        <label for="n2">Número 2</label>
+        <input type="text", name="n2", id="n2">
+
+        <br>
+        <input type="submit", value="Calcular">
+
+    </form>
+
+</body>
+</html>
