@@ -4,6 +4,6 @@ const router = express.Router();
 const calculadoraController = require('../controller/calculadoraController');
 
 router.get('/', calculadoraController.indexView);
-router.post('/calcular', calculadoraController.subtrair);
+router.post('/calcular', calculadoraController.resultadoCalculo);
 
 module.exports = router;
